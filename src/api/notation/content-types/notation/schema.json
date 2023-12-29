@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notations",
+  "info": {
+    "singularName": "notation",
+    "pluralName": "notations",
+    "displayName": "notation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "username": {
+      "type": "string"
+    },
+    "grade": {
+      "type": "integer"
+    },
+    "shop": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::shop.shop",
+      "inversedBy": "notations"
+    }
+  }
+}
